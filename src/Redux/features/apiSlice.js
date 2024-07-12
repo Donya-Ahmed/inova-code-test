@@ -8,12 +8,11 @@ export const apiSlice = createApi({
   baseQuery,
   endpoints: (builder) => ({
     // POST endpoint
-    addPost: builder.mutation({
-      query: (newPost) => ({
-        url: '/posts',
-        method: 'POST',
-        body: newPost,
-      }),
+    getProduct: builder.query({
+      // eslint-disable-next-line quotes
+      query: ({ id }) => {
+        return `/products/${id}`
+      }
     }),
 
     getProducts: builder.query({
@@ -25,4 +24,4 @@ export const apiSlice = createApi({
   }),
 });
 
-export const { useAddPostMutation,useGetProductsQuery } = apiSlice;
+export const { useGetProductQuery,useGetProductsQuery } = apiSlice;

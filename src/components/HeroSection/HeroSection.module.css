@@ -1,0 +1,23 @@
+.hero{
+    background-image: url('../../../public/images/img.webp');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80vh;
+}
+.btnPay{
+    background-color: #55E748 !important;
+    color: black !important;
+    width: auto !important;
+  }
+  .title{
+text-align: center;
+height: 100%;
+background-color:#0808089e;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap:20px;
+justify-content: center;
+    text-align: center;
+  }

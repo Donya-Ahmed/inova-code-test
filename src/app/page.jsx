@@ -5,7 +5,7 @@ export default function Home() {
   const { data, error, isLoading } = useGetProductsQuery({})
   return (
  <>
- <HomeView/>
+ <HomeView data={data?.data} loading={isLoading}/>
  </>
   );
 }
